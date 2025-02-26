@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QuickMart</title>
+        <link rel="stylesheet" href="common.css">
+        <link rel="stylesheet" href="products.css">
+        <link rel="icon" type="image/svg+xml" href="icons/quickmartWebIcon.svg">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+
+    </head>
+    <body>
+
+        <div class="header">
+            <p>Get 25% OFF on your first order. 
+            <a href="products.html">Order Now</a></p>
+        </div>
+
+        <div class="navbar">
+            <img id="QMLogo" src="icons/quickmartLogo1.svg" onclick="goToHome()">
+
+            <div class="navMenu">
+                <img id="navIcon" src="icons/dropdownMenu.svg" alt="menu" style="cursor: pointer;">
+            
+
+                <div class="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="products.html"> Products </a>
+                    <a href="aboutus.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+
+            <div class="navLinks2">
+                <div id="searchbar"><input placeholder="Search products"><img src="icons/searchIcon.svg"></div>
+
+                <a href="cart.html"><img src="icons/cart.svg"></a>
+                <div class="userLogin">
+                
+                    <a href="myAccount.html"><img src="icons/User.svg"></a>
+
+                    
+                    <div class="loginSignup">
+                        <a href="login.html">Login</a>
+                        <a href="signup.html">Sign Up</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="pagePath">
+            <p id="path">QuickMart <img src="icons/ChevronRight.svg" />Products</p>
+        </div>
+
+        <div class="products">
+            <div id="filterSidebar">
+                <div id="categories">
+                    <p>Categories</p>
+
+                    <div> <img src="icons/uncheckedBox.svg"> Fruits </div>
+                    <div> <img src="icons/uncheckedBox.svg"> Vegetables </div>
+                    <div> <img src="icons/uncheckedBox.svg"> Dairy </div>
+                    <div> <img src="icons/uncheckedBox.svg"> Poultry </div>
+                    <div> <img src="icons/uncheckedBox.svg"> Seafood </div>
+                    <div> <img src="icons/checkedBox.svg"> Bakery </div>
+
+                </div>
+
+                <div id="price">
+                    <p>Price</p>
+
+                    <div class="priceRange">
+                        <div>AED <input></div>
+                        —
+                        <div> AED <input></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="productsBox">
+                <div id="appliedFilters">
+                    <p>Applied Filters:</p>
+                    <div class="filters">
+                        <div> Bakery <img src="icons/close.svg"> </div>
+                        <div> Vegan <img src="icons/close.svg"> </div>
+                    </div>
+                </div>
+            
+
+                <div id="searchResultsNsortBy">
+                    <div id="results">
+                        Showing 1-9 of 54 Results.
+                    </div>
+                    <div class="sortByDropdown">
+                        <div id="sortby">
+                            SORT BY
+                            <img src="icons/ChevronDown.svg">
+                        </div>
+
+                        <div class="dropdownRevs">
+                            <div>Least Price</div>
+                            <div>Highest Price</div>
+                            <div>Highest Rated</div>
+                            <div>Lowest Rated</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="productsGrid">
+                    <div class="productsRow">
+
+                        <div class="product" onclick="showProduct('product1')">
+        
+                            <div class="productImage">
+        
+                                <img class="likeButton" src="icons/heart.svg" onclick="likeProduct(this); event.stopPropagation();">
+        
+                                <img class="productIMG" src="products/smith'sWhiteSlicedBread500g.svg" alt="White sliced bread">
+        
+                                <div class="addToCart">
+                                    Add to cart <img src="icons/CartAdd.svg">
+                                </div>
+        
+                            </div>
+        
+                            <div class="productDetails">
+                                <p class="productName">
+                                    Smith's White Sliced Bread 500g
+                                </p>
+                                <div class="stockNprice">
+                                    <p class="stock">IN STOCK</p>
+                                    <p class="productPrice">
+                                        AED 5.00
+                                    </p>
+                                </div>
+                            </div>
+        
+                        </div>
+
+                        <div class="product" onclick="showProduct('product2')">
+        
+                            <div class="productImage">
+        
+                                <img class="likeButton" src="icons/heart.svg" onclick="likeProduct(this); event.stopPropagation();">
+        
+                                <img class="productIMG" src="products/smith'sBrownSlicedBread500g.svg" alt="Brown sliced bread">
+        
+                                <div class="addToCart">
+                                    Add to cart <img src="icons/CartAdd.svg">
+                                </div>
+        
+                            </div>
+        
+                            <div class="productDetails">
+                                <p class="productName">
+                                    Smith's Brown Sliced Bread 500g
+                                </p>
+                                <div class="stockNprice">
+                                    <p class="stock">IN STOCK</p>
+                                    <p class="productPrice">
+                                        AED 4.75
+                                    </p>
+                                </div>
+                            </div>
+        
+                        </div>
+              
+        
+        
+                        <div class="product" onclick="showProduct('product3')">
+        
+                            <div class="productImage">
+        
+                                <img class="likeButton" src="icons/heart.svg" onclick="likeProduct(this); event.stopPropagation();">
+        
+                                <img class="productIMG"  src="products/greenValleyBurgerBuns6pcs.svg" alt="Burger Buns">
+        
+                                <div class="addToCart">
+                                    Add to cart <img src="icons/CartAdd.svg">
+                                </div>
+        
+                            </div>
+        
+                            <div class="productDetails">
+                                <p class="productName">
+                                    Green Valley Burger Buns 6pcs
+                                </p>
+                                <div class="stockNprice">
+                                    <p class="stock">IN STOCK</p>
+                                    <p class="productPrice">
+                                        AED 5.00
+                                    </p>
+                                </div>
+                            </div>
+        
+                        </div>
+
+                        <div class="product" onclick="showProduct('product17')">
+
+                            <div class="productImage">
+        
+                                <img class="likeButton" src="icons/heart.svg" onclick="likeProduct(this); event.stopPropagation();">
+        
+                                <img class="productIMG" src="products/HPMDVeganAppleDanishPuff4pcs.svg" alt="Apple Danish Puff">
+        
+                                <div class="addToCart">
+                                    Add to cart <img src="icons/CartAdd.svg">
+                                </div>
+        
+                            </div>
+        
+                            <div class="productDetails">
+                                <p class="productName">
+                                    HPMD Vegan Apple Danish Puff 4pcs
+                                </p>
+                                <div class="stockNprice">
+                                    <p class="stock">IN STOCK</p>
+                                    <p class="productPrice">
+                                        AED 11.85
+                                    </p>
+                                </div>
+                            </div>
+        
+                        </div>
+
+
+                    </div>
+                    <div class="productsRow">
+
+                        <div class="product" onclick="showProduct('product12')" >
+        
+                            <div class="productImage">
+        
+                                <img class="likeButton" src="icons/heart.svg" onclick="likeProduct(this); event.stopPropagation();">
+        
+                                <img class="productIMG" src="products/greenValleyWhiteSlicedBread250g.svg" alt="White sliced bread">
+        
+                                <div class="addToCart">
+                                    Add to cart <img src="icons/CartAdd.svg">
+                                </div>
+        
+                            </div>
+        
+                            <div class="productDetails">
+                                <p class="productName">
+                                    Green Valley White Sliced Bread 250g
+                                </p>
+                                <div class="stockNprice">
+                                    <p class="stock">IN STOCK</p>
+                                    <p class="productPrice">
+                                        AED 3.00
+                                    </p>
+                                </div>
+                            </div>
+        
+                        </div>
+        
+        
+        
+                        <div class="product" onclick="showProduct('product24')">
+        
+                            <div class="productImage">
+        
+                                <img class="likeButton" src="icons/heart.svg" onclick="likeProduct(this); event.stopPropagation();">
+        
+                                <img class="productIMG" src="products/sunriseNaturalTortillaWraps5pcs.svg" alt="Tortilla wraps">
+        
+                                <div class="addToCart">
+                                    Add to cart <img src="icons/CartAdd.svg">
+                                </div>
+        
+                            </div>
+        
+                            <div class="productDetails">
+                                <p class="productName">
+                                    Sunrise Natural Tortilla Wraps 5pcs
+                                </p>
+                                <div class="stockNprice">
+                                    <p class="stock">IN STOCK</p>
+                                    <p class="productPrice">
+                                        AED 4.00
+                                    </p>
+                                </div>
+                            </div>
+        
+                        </div>
+        
+        
+        
+                        <div class="product" onclick="showProduct('product16')">
+        
+                            <div class="productImage">
+        
+                                <img class="likeButton" src="icons/heart.svg" onclick="likeProduct(this); event.stopPropagation();">
+        
+                                <img class="productIMG"  src="products/HPMDPitaBread250g4pcs.svg" alt="Pita bread">
+        
+                                <div class="addToCart">
+                                    Add to cart <img src="icons/CartAdd.svg">
+                                </div>
+        
+                            </div>
+        
+                            <div class="productDetails">
+                                <p class="productName">
+                                    HPMD Pita Bread 250g 4pcs
+                                </p>
+                                <div class="stockNprice">
+                                    <p class="stock">IN STOCK</p>
+                                    <p class="productPrice">
+                                        AED 5.00
+                                    </p>
+                                </div>
+                            </div>
+        
+                        </div>
+
+                        <div class="product" onclick="showProduct('product14')">
+
+                            <div class="productImage">
+        
+                                <img class="likeButton" src="icons/heart.svg" onclick="likeProduct(this); event.stopPropagation();">
+        
+                                <img class="productIMG" src="products/HPMDChocolateChipMuffins12pcs.svg" alt="Chocolate Chip muffins">
+        
+                                <div class="addToCart">
+                                    Add to cart <img src="icons/CartAdd.svg">
+                                </div>
+        
+                            </div>
+        
+                            <div class="productDetails">
+                                <p class="productName">
+                                    HPMD Chocolate Chip Muffins 12pcs
+                                </p>
+                                <div class="stockNprice">
+                                    <p class="stock">IN STOCK</p>
+                                    <p class="productPrice">
+                                        AED 7.95
+                                    </p>
+                                </div>
+                            </div>
+        
+                        </div>
+
+                        
+                        
+    
+                    </div>
+                    <div class= "productsRow">
+
+                        <div class="product" onclick="showProduct('product13')">
+        
+                            <div class="productImage">
+        
+                                <img class="likeButton" src="icons/heart.svg" onclick="likeProduct(this); event.stopPropagation();">
+        
+                                <img class="productIMG" src="products/greenValleyWholeGrainSeededBread250g.svg" alt="Whole grain seeded bread">
+        
+                                <div class="addToCart">
+                                    Add to cart <img src="icons/CartAdd.svg">
+                                </div>
+        
+                            </div>
+        
+                            <div class="productDetails">
+                                <p class="productName">
+                                    Green Valley Whole Grain Seeded Bread 250g
+                                </p>
+                                <div class="stockNprice">
+                                    <p class="stock">IN STOCK</p>
+                                    <p class="productPrice">
+                                        AED 15.00
+                                    </p>
+                                </div>
+                            </div>
+        
+                        </div>
+      
+        
+        
+                        <div class="product" onclick="showProduct('product6')">
+        
+                            <div class="productImage">
+        
+                                <img class="likeButton" src="icons/heart.svg" onclick="likeProduct(this); event.stopPropagation();">
+        
+                                <img class="productIMG" src="products/croissant1.svg" alt="Croissant">
+        
+                                <div class="addToCart">
+                                    Add to cart <img src="icons/CartAdd.svg">
+                                </div>
+        
+                            </div>
+        
+                            <div class="productDetails">
+                                <p class="productName">
+                                    Croissant 6pcs
+                                </p>
+                                <div class="stockNprice">
+                                    <p class="stock">IN STOCK</p>
+                                    <p class="productPrice">
+                                        AED 6.00
+                                    </p>
+                                </div>
+                            </div>
+        
+                        </div>
+        
+        
+        
+                        <div class="product" onclick="showProduct('product5')">
+        
+                            <div class="productImage">
+        
+                                <img class="likeButton" src="icons/heart.svg" onclick="likeProduct(this); event.stopPropagation();">
+        
+                                <img class="productIMG"  src="products/chocolateDonut1.svg" alt="Chocolate donut">
+        
+                                <div class="addToCart">
+                                    Add to cart <img src="icons/CartAdd.svg">
+                                </div>
+        
+                            </div>
+        
+                            <div class="productDetails">
+                                <p class="productName">
+                                    Chocolate Donuts 6pcs
+                                </p>
+                                <div class="stockNprice">
+                                    <p class="stock">IN STOCK</p>
+                                    <p class="productPrice">
+                                        AED 5.00
+                                    </p>
+                                </div>
+                            </div>
+        
+                        </div>
+
+                        <div class="product" onclick="showProduct('product19')">
+
+                            <div class="productImage">
+        
+                                <img class="likeButton" src="icons/heart.svg" onclick="likeProduct(this); event.stopPropagation();">
+        
+                                <img class="productIMG" src="products/pinkMacaron1.svg" alt="Strawberry Macarons">
+        
+                                <div class="addToCart">
+                                    Add to cart <img src="icons/CartAdd.svg">
+                                </div>
+        
+                            </div>
+        
+                            <div class="productDetails">
+                                <p class="productName">
+                                    Strawberry Macarons 6pcs
+                                </p>
+                                <div class="stockNprice">
+                                    <p class="stock">IN STOCK</p>
+                                    <p class="productPrice">
+                                        AED 10.00
+                                    </p>
+                                </div>
+                            </div>
+        
+                        </div>
+
+                        
+    
+                    </div>
+                </div>
+
+                <div id="pages">
+                    <div class="arrows"><img src="icons/ChevronLeft.svg"> </div>
+                    <div>1</div>
+                    <div>2</div>
+                    <div>...</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div class="arrows"><img src="icons/greenChevronRight.svg"> </div>
+                </div>
+    
+            </div>
+
+        </div>
+
+
+        <div id="newsletter">
+            <div id="newsletterText">
+                <p id="newsletterH1">Join Our Newsletter</p>
+                <p id="newsletterH2">We love to surprise our subscribers with occasional gifts.</p>
+            </div>
+
+            <div id="inputBox">
+                <input placeholder="Your email address">
+                <button>Subscribe</button>
+            </div>
+        </div>   
+        
+        
+        <div id="footer" style="background-color: #3d6200">
+            <div id="sections">
+                <div id="section1">
+                    
+                    <img src="icons/quickmartLogo.svg" style="height: 25px; align-self: flex-start;" />
+                    
+                    <p>
+                        At QuickMart, we are committed to delivering quality groceries right to your door, making your shopping experience convenient and hassle-free.
+                    </p>
+                    <div id="socials">
+                        <a href="https://www.instagram.com/">
+                            <img src="icons/instagram.svg" />
+                        </a>
+
+                        <a href="https://www.youtube.com/">
+                            <img src="icons/youtube.svg" />
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="linksSection">
+                    <p>SUPPORT</p>
+                    
+                    <a href="termsOfUse.html">Terms of use</a>
+                    <a href="privacyPolicy.html">Privacy Policy</a>
+                </div>
+        
+                <div class="linksSection">
+                <p>COMPANY</p>
+                
+                <a href="aboutus.html">About us</a>
+                <a href="contact.html">Contact</a>
+                
+                </div>
+        
+                <div class="linksSection">
+                    <p>SHOP</p>
+                
+                    <a href="myAccount.html">My Account</a>
+                    <a href="cart.html">Cart</a>
+                
+                </div>
+        
+                <div id="paymentSection">
+                    <p>ACCEPTED PAYMENTS</p>
+                    <img src="icons/payments.svg" />
+                </div>
+
+            </div>
+    
+            <footer>
+                © 2024 QuickMart. All rights reserved.
+            <footer>
+
+        </div>
+
+        <script src="products.js"></script>
+        <script src="common.js"></script>
+    </body>
+</html>

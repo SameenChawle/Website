@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QuickMart</title>
+        <link rel="stylesheet" href="common.css">
+        <link rel="stylesheet" href="login.css">
+        <link rel="icon" type="image/svg+xml" href="icons/quickmartWebIcon.svg">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+
+    </head>
+    <body>
+
+        <div class="header">
+            <p>Get 25% OFF on your first order. 
+            <a href="products.html">Order Now</a></p>
+        </div>
+
+        <div class="navbar">
+            <img id="QMLogo" src="icons/quickmartLogo1.svg" onclick="goToHome()">
+
+            <div class="navMenu">
+                <img id="navIcon" src="icons/dropdownMenu.svg" alt="menu" style="cursor: pointer;">
+            
+
+                <div class="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="products.html"> Products </a>
+                    <a href="aboutus.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+
+            <div class="navLinks2">
+                <div id="searchbar"><input placeholder="Search products"><img src="icons/searchIcon.svg"></div>
+
+                <a href="cart.html"><img src="icons/cart.svg"></a>
+
+                <div class="userLogin">
+                
+                    <a href="myAccount.html"><img src="icons/User.svg"></a>
+
+                    
+                    <div class="loginSignup">
+                        <a href="login.html">Login</a>
+                        <a href="signup.html">Sign Up</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="pagePath">
+            <p id="currentPage">Login</p>
+            <p id="path">QuickMart <img src="icons/ChevronRight.svg" /> Login</p>
+        </div>
+    
+        
+        <div id="loginCredentials">
+        
+            <div class="inputGroup">
+                <p>Email</p>
+                <input id="emailID">
+            </div>
+            
+            <div class="inputGroup">
+                <p>Password</p>
+                <input type="password" id="emailPW">
+            </div>
+
+            <div class="group2">
+
+                <a id= forgotpw href="forgotPassword.html">Forgot Password?</a>
+                
+                <button>Login</button>
+                
+                <p>Don't have an account? <a href="signup.html"> Sign up </a></p>
+            </div>
+
+        </div>
+        
+        
+        <div id="footer" style="background-color: #3d6200">
+            <div id="sections">
+                <div id="section1">
+                    
+                    <img src="icons/quickmartLogo.svg" style="height: 25px; align-self: flex-start;" />
+                    
+                    <p>
+                        At QuickMart, we are committed to delivering quality groceries right to your door, making your shopping experience convenient and hassle-free.
+                    </p>
+                    <div id="socials">
+                        <a href="https://www.instagram.com/">
+                            <img src="icons/instagram.svg" />
+                        </a>
+
+                        <a href="https://www.youtube.com/">
+                            <img src="icons/youtube.svg" />
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="linksSection">
+                    <p>SUPPORT</p>
+                    
+                    <a href="termsOfUse.html">Terms of use</a>
+                    <a href="privacyPolicy.html">Privacy Policy</a>
+                </div>
+        
+                <div class="linksSection">
+                <p>COMPANY</p>
+                
+                <a href="aboutus.html">About us</a>
+                <a href="contact.html">Contact</a>
+                
+                </div>
+        
+                <div class="linksSection">
+                    <p>SHOP</p>
+                
+                    <a href="myAccount.html">My Account</a>
+                    <a href="cart.html">Cart</a>
+                
+                </div>
+        
+                <div id="paymentSection">
+                    <p>ACCEPTED PAYMENTS</p>
+                    <img src="icons/payments.svg" />
+                </div>
+
+            </div>
+    
+            <footer>
+                © 2024 QuickMart. All rights reserved.
+            <footer>
+
+        </div>
+
+        <script src="common.js"></script>
+    </body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QuickMart</title>
+        <link rel="stylesheet" href="common.css">
+        <link rel="stylesheet" href="myAccount.css">
+        <link rel="icon" type="image/svg+xml" href="icons/quickmartWebIcon.svg">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+
+    </head>
+    <body>
+
+        <div class="header">
+            <p>Get 25% OFF on your first order. 
+            <a href="products.html">Order Now</a></p>
+        </div>
+
+        <div class="navbar">
+            <img id="QMLogo" src="icons/quickmartLogo1.svg" onclick="goToHome()">
+
+            <div class="navMenu">
+                <img id="navIcon" src="icons/dropdownMenu.svg" alt="menu" style="cursor: pointer;">
+            
+
+                <div class="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="products.html"> Products </a>
+                    <a href="aboutus.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+
+            <div class="navLinks2">
+                <div id="searchbar"><input placeholder="Search products"><img src="icons/searchIcon.svg"></div>
+
+                <a href="cart.html"><img src="icons/cart.svg"></a>
+                <div class="userLogin">
+                
+                    <a href="myAccount.html"><img src="icons/User.svg"></a>
+
+                    
+                    <div class="loginSignup">
+                        <a href="login.html">Login</a>
+                        <a href="signup.html">Sign Up</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="pagePath">
+            <p id="currentPage">My Account</p>
+            <p id="path">QuickMart <img src="icons/ChevronRight.svg" />My Account</p>
+        </div>
+    
+        <div id="myAccountBox">
+            <div id="accountNavigation">
+                
+                <div id="showOrder" class="sidebar">
+                    <img src="icons/cart.svg" alt="cart icon">
+                    <p>Orders</p>
+                </div>
+
+                <div id="showWishlist" class="sidebar">
+                    <img src="icons/wishlistIcon.svg" alt="wishlist heart icon">
+                    <p>Wishlist</p>
+                </div>
+
+                <div id="showAddress" class="sidebar">
+                    <img src="icons/addressIcon.svg" alt="truck icon">
+                    <p>Address</p>
+                </div>
+
+                <div id="showPassword" class="sidebar">
+                    <img src="icons/passwordIcon.svg" alt="key icon">
+                    <p>Password</p>
+                </div>
+
+                <div id="showAccDetails" class="sidebar">
+                    <img src="icons/accDetailIcon.svg" alt="user icon">
+                    <p>Account Detail</p>
+                </div>
+
+                <div id="showLogout" class="sidebar">
+                    <img src="icons/logoutIcon.svg" alt="log out icon">
+                    <p>Log out</p>
+                </div>
+
+            </div>
+
+            <!-- when there are zero orders, i.e, an empty account -->
+            <div id="zeroOrders">
+                <img src="icons/noOrders.svg">
+                <p>Your order history is waiting to be filled.</p>
+                <a href="products.html">Start Shopping</a>
+            </div>
+
+            <!-- shipping address of user  -->
+            <div id="address">
+
+                <div class="sectionSelected">Shipping Address</div>
+
+                <div class="group">
+
+                    <div>
+                        <p>Flat No.</p>
+                        <input>
+                    </div>
+
+                    <div>
+                        <p>Building Name</p>
+                        <input>
+                    </div>
+                
+                </div>
+
+                <div class="group">
+
+                    <div>
+                        <p>Street Name</p>
+                        <input>
+                    </div>
+
+                    <div>
+                        <p>Nearest Landmark</p>
+                        <input>
+                    </div>
+
+                </div>
+
+                <div class="group">
+
+                    <div>
+                        <p>City/Province</p>
+                        <input>
+                    </div>
+
+                    <div>
+                        <p>Emirate</p>
+                        <input>
+                    </div>
+
+                </div>
+
+                <button>Save Changes</button>
+
+            </div>
+
+            <!-- account details of user -->
+            <div id="accountDetails">
+
+                <div class="sectionSelected">
+                    Account Details
+                </div>
+
+                <div class="group">
+
+                    <div>
+                        <p>Full Name</p>
+                        <input>
+                    </div>
+
+                    <div>
+                        <p>Email</p>
+                        <input>
+                    </div>
+
+                </div>
+
+                <button> Save Changes </button>
+
+            </div>
+
+            <!-- changing password of user -->
+            <div id="changePass">
+
+                <div class="sectionSelected">Change Password</div>
+
+                <div class="group">
+
+                    <div>
+                        <p>New Password</p>
+                        <input type="password">
+                    </div>
+
+                    <div>
+                        <p>Confirm Password</p>
+                        <input type="password">
+                    </div>
+
+                </div>
+
+                <button> Change password </button>
+
+            </div>
+
+            <!-- order section, when there are non-zero orders -->
+            <div id="orders">
+
+                <div class="sectionSelected">Orders</div>
+
+                <div class="order">
+                    <img class="itemPicture" src="products/freshIndianMalta1kg.svg">
+
+                    <div class="orderDetails">
+                        <p class="productName">Fresh Indian Malta 1kg</p>
+                        <p class="dateOrdered">
+                            Ordered On: 20 October 2024
+                        </p>
+                        <p class="productPrice">
+                            AED 7.00
+                        </p>
+                    </div>
+
+                    <div class="itemStatus">
+                        <p class="orderStatus">Processing</p>
+
+                        <button class="viewItem" onclick="showProduct('product9')">View item</button>
+                    </div>
+
+                </div>
+
+                <div class="order">
+                    <img class="itemPicture" src="products/smith'sWhiteSlicedBread500g.svg">
+
+                    <div class="orderDetails">
+                        <p class="productName">Smith's White Sliced Bread</p>
+                        <p class="dateOrdered">
+                            Ordered On: 2 October 2024
+                        </p>
+                        <p class="productPrice">
+                            AED 5.00
+                        </p>
+                    </div>
+
+                    <div class="itemStatus">
+
+                        <p class="orderStatus">
+                            Completed
+                        </p>
+
+                        <button class="viewItem" onclick="showProduct('product1')">
+                            View item
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- wishlist -->
+            <div id="wishlist">
+
+                <div class="sectionSelected">Wishlist</div>
+
+                <div class="wishlistItem">
+                    <img class="itemPicture" src="products/freshIndianMalta1kg.svg">
+
+                    <div class="itemDetails">
+                        <p class="productName">Fresh Indian Malta 1kg</p>
+                        <p class="dateAdded">
+                            Added on: 20 October 2024
+                        </p>
+                        <p class="productPrice">
+                            AED 7.00
+                        </p>
+                    </div>
+
+                    <div class="itemStatus">
+                        <p class="removeItem">Remove item</p>
+
+                        <button class="addToCart">Add to cart</button>
+                    </div>
+
+                </div>
+
+                <div class="wishlistItem">
+                    <img class="itemPicture" src="products/smith'sWhiteSlicedBread500g.svg">
+
+                    <div class="itemDetails">
+                        <p class="productName">Smith's White Sliced Bread</p>
+                        <p class="dateAdded">
+                            Added On: 2 October 2024
+                        </p>
+                        <p class="productPrice">
+                            AED 5.00
+                        </p>
+                    </div>
+
+                    <div class="itemStatus">
+
+                        <p class="removeItem">
+                            Remove Item
+                        </p>
+
+                        <button class="addToCart">
+                            Add to cart
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="footer" style="background-color: #3d6200">
+            <div id="sections">
+                <div id="section1">
+                    
+                    <img src="icons/quickmartLogo.svg" style="height: 25px; align-self: flex-start;" />
+                    
+                    <p>
+                        At QuickMart, we are committed to delivering quality groceries right to your door, making your shopping experience convenient and hassle-free.
+                    </p>
+                    <div id="socials">
+                        <a href="https://www.instagram.com/">
+                            <img src="icons/instagram.svg" />
+                        </a>
+
+                        <a href="https://www.youtube.com/">
+                            <img src="icons/youtube.svg" />
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="linksSection">
+                    <p>SUPPORT</p>
+                    
+                    <a href="termsOfUse.html">Terms of use</a>
+                    <a href="privacyPolicy.html">Privacy Policy</a>
+                </div>
+        
+                <div class="linksSection">
+                <p>COMPANY</p>
+                
+                <a href="aboutus.html">About us</a>
+                <a href="contact.html">Contact</a>
+                
+                </div>
+        
+                <div class="linksSection">
+                    <p>SHOP</p>
+                
+                    <a href="myAccount.html">My Account</a>
+                    <a href="cart.html">Cart</a>
+                
+                </div>
+        
+                <div id="paymentSection">
+                    <p>ACCEPTED PAYMENTS</p>
+                    <img src="icons/payments.svg" />
+                </div>
+
+            </div>
+    
+            <footer>
+                © 2024 QuickMart. All rights reserved.
+            <footer>
+
+        </div>
+
+    
+        <script src="myAccount.js"></script>
+        <script src="common.js"></script>
+        
+    </body>
+</html>
+

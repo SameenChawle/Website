@@ -1,0 +1,215 @@
+#accountNavigation {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 22%;
+  padding-right: 30px;
+  border-right: 1px solid hsl(0, 0%, 50%, 40%);
+}
+
+.sidebar {
+  display: flex;
+  color: #3d6200;
+  gap: 10px;
+  padding: 8px 24px;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: 500;
+  /* border: solid 1px #3d6200; */
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 20px;
+  /* width: 20%; */
+}
+
+
+.sidebarActive {
+  background-color: #dde69b;
+}
+
+#myAccountBox {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+/* when there are zero orders */
+
+#zeroOrders {
+  color: #3d6200;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  display: none;
+}
+
+#zeroOrders img {
+  width: 20%;
+  max-width: 60px;
+}
+
+#zeroOrders a {
+  padding: 12px 24px;
+  background-color: #3d6200;
+  border-style: none;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#zeroOrders a:hover {
+  background-color: hsl(83, 100%, 19%, 90%);
+}
+
+/* when address is selected */
+
+#address,
+#accountDetails,
+#changePass {
+  padding: 0 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  display: none;
+}
+
+.sectionSelected {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.group {
+  display: flex;
+  gap: 20px;
+}
+
+.group input {
+  padding: 10px 15px;
+  border: solid 1px #b3bb6f;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+
+#address button,
+#accountDetails button,
+#changePass button {
+  background-color: #3d6200;
+  border-style: none;
+  padding: 12px 24px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#address button:hover,
+#accountDetails button:hover,
+#changePass button:hover {
+  background-color: hsl(83, 100%, 19%, 90%);
+}
+
+#orders, #wishlist{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  display: none;
+}
+
+
+.order, .wishlistItem {
+  display: flex;
+  gap: 10px;
+}
+
+.itemPicture {
+  width: 80px;
+  height: 80px;
+}
+
+.orderDetails, .itemDetails{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 200px;
+  justify-content: center;
+}
+
+.productName{
+  font-weight: 500;
+}
+
+.dateOrdered, .dateAdded{
+  color: #3d6200;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.productPrice{
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.itemStatus{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  
+}
+
+.orderStatus, .removeItem{
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.removeItem{
+  cursor: pointer;
+}
+
+.viewItem, .addToCart{
+  padding: 12px 12px;
+  height: 44px;
+  background-color: white;
+  font-weight: 500;
+  font-size: 90%;
+  cursor: pointer;
+  border-radius: 4px;
+  border: solid 1px #3d6200;
+  color: #3d6200;
+}
+
+.viewItem:hover, .addToCart:hover{
+  background-color: hsl(66, 36%, 58%, 50%)
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar p {
+    display: none;
+  }
+
+  .group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #orders, #wishlist{
+    margin-left: 0;
+  }
+  .order, .wishlistItem{
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  
+
+}

@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QuickMart</title>
+        <link rel="stylesheet" href="common.css">
+        <link rel="stylesheet" href="productDescription.css">
+        <link rel="icon" type="image/svg+xml" href="icons/quickmartWebIcon.svg">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+
+    </head>
+    <body>
+
+        <div class="header">
+            <p>Get 25% OFF on your first order. 
+            <a href="products.html">Order Now</a></p>
+        </div>
+
+        <div class="navbar">
+            <img id="QMLogo" src="icons/quickmartLogo1.svg" onclick="goToHome()">
+
+            <div class="navMenu">
+                <img id="navIcon" src="icons/dropdownMenu.svg" alt="menu" style="cursor: pointer;">
+            
+
+                <div class="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="products.html"> Products </a>
+                    <a href="aboutus.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+
+            <div class="navLinks2">
+                <div id="searchbar"><input placeholder="Search products"><img src="icons/searchIcon.svg"></div>
+
+                <a href="cart.html"><img src="icons/cart.svg"></a>
+                <div class="userLogin">
+                
+                    <a href="myAccount.html"><img src="icons/User.svg"></a>
+
+                    
+                    <div class="loginSignup">
+                        <a href="login.html">Login</a>
+                        <a href="signup.html">Sign Up</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="pagePath">
+            <p id="path">QuickMart <img src="icons/ChevronRight.svg" /> Smith's White Sliced Bread 500g</p>
+        </div>
+
+        <div id="productBox">
+
+            <div class="productDisplay">
+                <div class="dotsDisplay">
+                    <img class="dot" src="icons/Dot.svg">
+                    <img class="dot" src="icons/Dot.svg">
+                    <img class="dot" src="icons/Dot.svg">
+                    <img class="dot" src="icons/Dot.svg">
+                </div>
+                <div class="productSlides" id="productImages">
+                    <img class="slide" id="img1" src="products/smith'sWhiteSlicedBread500g.svg" alt="image1">
+                    <img class="slide" id="img2" src="products/smith'sWhiteSlicedBread500g2.svg"  alt="image2">
+                    <img class="slide" id="img3" src="products/smith'sWhiteSlicedBread500g3.svg" alt="image3">
+                    <img class="slide" id="img4" src="products/smith'sWhiteSlicedBread500g4.svg" alt="image4">
+                </div>
+                
+                <button class="prev" onclick="prevSlide()"> <img src="icons/ChevronLeft.svg"> </button>
+                <button class="next" onclick="nextSlide()"> <img src="icons/greenChevronRight.svg"> </button>
+    
+            </div>
+
+            <div class="productInfo">
+                <div id="line1">
+                    <p id="productName">Smith's White Sliced Bread 500g</p>
+                    <img src="icons/share.svg" alt="share button" onclick="openShareBox()">
+                </div>
+
+                <div id="line2">
+                    <img src="icons/star.svg">
+                    4.2 — 54 Reviews
+                    <div id="stockStatus">
+                        IN STOCK
+                    </div>
+                </div>
+
+                <div id="line3">
+                    AED 5.00
+                </div>
+
+                <div id="line4">
+                    <p class="infoLabel">
+                        COMPANY
+                    </p>
+                    <p> SMITH'S FAMILY FARM </p>
+                </div>
+
+                <div id="line5">
+                    <p class="infoLabel">
+                        QUANTITY
+                    </p>
+
+                    <div class="quantitySelection">
+                        <button class="minus">
+                            <img src="icons/minusSign.svg">
+                        </button>
+                        <div class="quantity"> 1 </div>
+                        <button class="plus">
+                            <img src="icons/plusSign.svg">
+                        </button>
+                    </div>
+                </div>
+
+                <div id="line6">
+                    <button id="addToCart" onclick="openCartSidebar()">
+                        Add to cart
+                    </button>
+                    <img id="heartIcon" src="icons/heart.svg">
+                </div>
+
+                <div id="line7">
+                    — FREE SHIPPING ON ORDERS AED 100+ 
+                </div>
+
+
+            </div>
+            
+
+        </div>
+
+        <div id="detailsNreviews">
+
+            <div id="tabs">
+                <div id="details">
+                    <img id="detailIcon" src="icons/greenMore.svg">
+                    Details
+                </div>
+
+                <div id="reviews">
+                    <img id="reviewIcon" src="icons/blackEmptyStar.svg">
+                    Reviews
+                </div>
+
+            </div>
+
+            <div id="detailTab">
+                <div class="tabName">
+                    Details
+                </div>
+                <div id="productDescription">
+                    Smith's White Sliced Bread stands out with its commitment to quality and sustainability. The bread's soft and fluffy texture is ideal for various uses, from a simple piece of buttered toast to a hearty sandwich. Packaged in eco-friendly, recyclable materials, it supports your commitment to a sustainable lifestyle.
+                    <br><br>
+                    Smith's White Sliced Bread is a classic favorite, baked fresh daily with the finest organic ingredients. Enjoy its soft, airy texture and golden crust, perfect for sandwiches, toast, and more.
+                    <br><br>
+                        <li> Organic Ingredients: Pure and wholesome.</li>
+                        <li> No Additives: Free from artificial preservatives, colors, and flavors.</li>
+                        <li>Soft and Fluffy: Perfect for any use.</li>
+                        <li>Eco-Friendly Packaging: Recyclable materials.</li>
+
+                </div>
+            </div>
+
+            <div id="reviewTab">
+                <div class="tabName">
+                    Reviews
+                </div>
+                <div id="ratingNreview">
+                    <div id="rating">4.2</div>
+                    <div id="numReviews">— 54 reviews</div>
+                </div>
+                <button onclick="openReviewBox()"> Write a review </button>
+                
+
+                <div class="sortByDropdown">
+                    <div id="sortby">
+                        SORT BY
+                        <img src="icons/ChevronDown.svg">
+                    </div>
+
+                    <div class="dropdownRevs">
+                        <div>Latest</div>
+                        <div>Oldest</div>
+                        <div>Highest Rated</div>
+                        <div>Lowest Rated</div>
+                    </div>
+
+                </div>
+
+                <div id="reviewBox">
+
+                    <div class="review">
+                        <div class="nameNstar">
+                            <p>Binil Varughese</p>
+                            <img src="icons/starRating.svg">
+                        </div>
+                        <div class="timeline">
+                            1 WEEK AGO
+                        </div>
+                        <div class="reviewText">
+                            This company always goes above and beyond to satisfy their customers.
+                        </div>
+                    </div>
+
+
+                    <div class="review">
+                        <div class="nameNstar">
+                            <p>Tarun Palakkal</p>
+                            <img src="icons/starRating.svg">
+                        </div>
+                        <div class="timeline">
+                            2 MONTHS AGO
+                        </div>
+                        <div class="reviewText">
+                            I can't believe how affordable and high-quality this item is!
+                        </div>
+                    </div>
+
+                    <div class="review">
+                        <div class="nameNstar">
+                            <p>Ayeesha Shariff</p>
+                            <img src="icons/starRating.svg">
+                        </div>
+                        <div class="timeline">
+                            23 APRIL
+                        </div>
+                        <div class="reviewText">
+                            These guys know their stuff, and it shows in their products.
+                        </div>
+                    </div>
+
+                    <button id="loadReviews">
+                        Load more reviews
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div id="similarProductsBox">
+
+            <div id="SPLabel">
+                <p id="biggerLabel">You might also like</p>
+                <p id="smallerLabel"> SIMILAR PRODUCTS</p>
+            </div>
+
+            <div id="similarProducts">
+
+                <div class="product">
+
+                    <div class="productImage">
+
+                        <img class="likeButton" src="icons/heart.svg">
+
+                        <img class="productIMG" src="products/smith'sBrownSlicedBread500g.svg" alt="Brown sliced bread">
+
+                        <div class="addToCart">
+                            Add to cart <img src="icons/CartAdd.svg">
+                        </div>
+
+                    </div>
+
+                    <div class="productDetails">
+                        <p class="productName">
+                            Smith's Brown Sliced Bread 500g
+                        </p>
+                        <div class="stockNprice">
+                            <p class="stock">IN STOCK</p>
+                            <p class="productPrice">
+                                AED 4.75
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="product">
+
+                    <div class="productImage">
+
+                        <img class="likeButton" src="icons/heart.svg">
+
+                        <img class="productIMG" src="products/greenValleyWhiteSlicedBread250g.svg" alt="White sliced bread">
+
+                        <div class="addToCart">
+                            Add to cart <img src="icons/CartAdd.svg">
+                        </div>
+
+                    </div>
+
+                    <div class="productDetails">
+                        <p class="productName">
+                            Green Valley White Sliced Bread 250g
+                        </p>
+                        <div class="stockNprice">
+                            <p class="stock">IN STOCK</p>
+                            <p class="productPrice">
+                                AED 3.00
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="product">
+
+                    <div class="productImage">
+
+                        <img class="likeButton" src="icons/heart.svg">
+
+                        <img class="productIMG"  src="products/smith'sMultigrainBread250g.svg" alt="Multigrain bread">
+
+                        <div class="addToCart">
+                            Add to cart <img src="icons/CartAdd.svg">
+                        </div>
+
+                    </div>
+
+                    <div class="productDetails">
+                        <p class="productName">
+                            Smith's Multigrain Bread 250g
+                        </p>
+                        <div class="stockNprice">
+                            <p class="stock">IN STOCK</p>
+                            <p class="productPrice">
+                                AED 3.25
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="product" onclick="showProduct('product15')">
+
+                    <div class="productImage">
+
+                        <img class="likeButton" src="icons/heart.svg">
+
+                        <img class="productIMG" src="products/HPMDglutenFreeBread250g.svg" alt="Gluten-free bread">
+
+                        <div class="addToCart">
+                            Add to cart <img src="icons/CartAdd.svg">
+                        </div>
+
+                    </div>
+
+                    <div class="productDetails">
+                        <p class="productName">
+                            HPMD Gluten-Free Bread 250g
+                        </p>
+                        <div class="stockNprice">
+                            <p class="stock">IN STOCK</p>
+                            <p class="productPrice">
+                                AED 15.25
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    
+        <div id="newsletter">
+            <div id="newsletterText">
+                <p id="newsletterH1">Join Our Newsletter</p>
+                <p id="newsletterH2">We love to surprise our subscribers with occasional gifts.</p>
+            </div>
+
+            <div id="inputBox">
+                <input placeholder="Your email address">
+                <button>Subscribe</button>
+            </div>
+        </div>   
+        
+        <div id="footer" style="background-color: #3d6200">
+            <div id="sections">
+                <div id="section1">
+                    
+                    <img src="icons/quickmartLogo.svg" style="height: 25px; align-self: flex-start;" />
+                    
+                    <p>
+                        At QuickMart, we are committed to delivering quality groceries right to your door, making your shopping experience convenient and hassle-free.
+                    </p>
+                    <div id="socials">
+                        <a href="https://www.instagram.com/">
+                            <img src="icons/instagram.svg" />
+                        </a>
+
+                        <a href="https://www.youtube.com/">
+                            <img src="icons/youtube.svg" />
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="linksSection">
+                    <p>SUPPORT</p>
+                    
+                    <a href="termsOfUse.html">Terms of use</a>
+                    <a href="privacyPolicy.html">Privacy Policy</a>
+                </div>
+        
+                <div class="linksSection">
+                <p>COMPANY</p>
+                
+                <a href="aboutus.html">About us</a>
+                <a href="contact.html">Contact</a>
+                
+                </div>
+        
+                <div class="linksSection">
+                    <p>SHOP</p>
+                
+                    <a href="myAccount.html">My Account</a>
+                    <a href="cart.html">Cart</a>
+                
+                </div>
+        
+                <div id="paymentSection">
+                    <p>ACCEPTED PAYMENTS</p>
+                    <img src="icons/payments.svg" />
+                </div>
+
+            </div>
+    
+            <footer>
+                © 2024 QuickMart. All rights reserved.
+            <footer>
+
+        </div>
+
+        <div class="addToCartSidebar" id="addToCartSidebar">
+            <div>
+            <div id="topBar">
+                Shopping cart<img src="icons/close.svg" onclick="closeCartSidebar()">
+            </div>
+
+            <div id="items">
+
+                <div class="cartItem">
+
+                    <div class="itemImage">
+                        <img class="image"src="products/smith'sWhiteSlicedBread500g.svg">
+                        <img class="closeButton" src="icons/close.svg">
+                    </div>
+
+                    <div class="itemInfo">
+                        <p>Smith's White Sliced Bread 500g</p>
+                        <div class="priceNquantity">
+                            <div class="quantitySelection">
+                                <button class="minus">
+                                    <img src="icons/minusSign.svg">
+                                </button>
+                                <div class="quantity"> 1 </div>
+                                <button class="plus">
+                                    <img src="icons/plusSign.svg">
+                                </button>
+                            </div>
+                            <p>AED 5.00</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="cartItem">
+
+                    <div class="itemImage">
+                        <img class="image" src="products/saltedButter500g.svg">
+                        <img class="closeButton" src="icons/close.svg">
+                    </div>
+
+                    <div class="itemInfo">
+                        <p>Salted Butter 500g</p>
+                        <div class="priceNquantity">
+                            <div class="quantitySelection">
+                                <button class="minus">
+                                    <img src="icons/minusSign.svg">
+                                </button>
+                                <div class="quantity"> 1 </div>
+                                <button class="plus">
+                                    <img src="icons/plusSign.svg">
+                                </button>
+                            </div>
+                            <p>AED 15.00</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            </div>
+            <div>
+            <div id="bottomBar">
+                <div id="total">
+                    <p>Total</p>
+                    <p id="totalExpense">AED 20.00</p>
+                </div>
+                <a href="cart.html">View Cart</a>
+            </div>
+            <a id="checkOut" href="checkout.html">Checkout</a>
+            </div>
+        </div>
+
+        <div class="overlay" onclick="removeOverlay()"></div>
+
+        <div class="shareModal" id="shareModal">
+
+            <div id="copyLink">
+                <p class="modalText">Copy Link</p>
+                <div>
+                    <input value="https://quickmart.com">
+                    <img src="icons/copyLink.svg">
+                </div>
+            </div>
+
+            <div id="shareIcons">
+                <p class="modalText"> Share </p>
+                <div>
+                    <img src="icons/facebook.svg">
+                    <img src="icons/twitter.svg">
+                    <img src="icons/pinterest.svg">
+                    <img src="icons/telegram.svg">
+                    <img src="icons/whatsapp.svg">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="writeReview" id="writeReview">
+            <div id="top">
+                Write Review 
+                <img src="icons/close.svg" onclick="closeReviewBox()">
+            </div>
+
+            <div id="reviewContainer">
+                <div>
+                    <p>Email</p>
+                    <input>
+                </div>
+
+                <div>
+                    <p>Full name</p>
+                    <input>
+                </div>
+
+                <div id="userReview">
+                    <p>Review</p>
+                    <textarea></textarea>
+                </div>
+
+                <div id="ratingStars">
+                    <img src="icons/greenFilledStar.svg">
+                    <img src="icons/greenEmptyStar2.svg">
+                    <img src="icons/greenEmptyStar2.svg">
+                    <img src="icons/greenEmptyStar2.svg">
+                    <img src="icons/greenEmptyStar2.svg">
+                </div>
+            </div>
+
+            <button> Submit Your Review </button>
+        </div>
+
+        <script src="productDescription.js"></script>
+        <script src="common.js"></script>
+        
+    </body>
+</html>

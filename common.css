@@ -1,0 +1,277 @@
+*{
+    font-family: 'Inter';
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.header{
+    background-color: #346200;
+    color: white;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.header a{
+    color: white;
+    font-weight: 500;
+}
+
+#QMLogo{
+    cursor: pointer;
+}
+
+.navbar{
+    height: 80px;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between; 
+    padding: 0 20px; 
+    flex-wrap: wrap;
+}
+
+
+.navLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+.navbar img{
+    height: 30px;
+}
+
+.navbar a{
+    color: #346200;
+    text-decoration: none;
+    display: flex;
+}
+
+
+@media screen and (min-width: 769px) 
+{
+    #navIcon{
+        display: none;
+    }    
+}
+
+@media screen and (max-width: 768px) {
+
+    
+    .navMenu{
+        position: relative;
+        display: inline-block;
+    }
+    
+    .navLinks{
+        display: none;
+        position: absolute;
+        background-color: white;
+        border-radius: 5px;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .navLinks a , .navLinks div{
+        color: #346200;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-weight: 500;
+    }
+    
+    .navLinks a:hover, .navLinks div:hover {
+        background-color: #dde69b;
+    }
+    
+    
+    .navMenu:hover .navLinks {
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+
+    *{
+        font-size: 10px;
+    }
+    .navbar {
+        flex-direction: column; 
+        height: auto;
+    }
+
+    .navLinks2, #searchbar {
+        justify-content: flex-start;
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+ 
+    #searchbar input {
+        width: 100%; 
+    }  
+
+    .navLinks {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .navbar img {
+        height: 25px; 
+    }
+}
+
+.navLinks2{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    position: relative; 
+}
+
+.userLogin{
+    position: relative;
+    display: inline-block;
+}
+
+.loginSignup{
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    width: 7rem;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.loginSignup a{
+    color: #346200;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: block;
+    border-radius: 2px;
+}
+
+.loginSignup a:hover{
+    background-color: #dde69b;
+}
+
+.userLogin:hover .loginSignup{
+    display: block;
+}
+
+
+
+#searchbar{
+    display: flex;
+    height: 45px;
+    align-items: center;
+    gap: 10px;
+}
+
+#searchbar input {
+    border-radius: 6px;
+    padding: 10px 15px;
+    max-width: 100%;
+}
+
+.navLinks2 img{
+    height: 22px;
+    cursor: pointer;
+}
+
+#pagePath{
+    display: flex;
+    flex-direction: column;
+    background-color: #dde69b;
+    height: 80px;
+    padding-left: 5%;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+#currentPage{
+    font-size: 24px;
+    font-weight: 700;
+    color: #346200;
+}
+
+#path{
+    display: flex;
+    gap: 4px;
+    color: black;
+    font-weight: 500;
+    align-items: center;
+}
+
+#sections{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 10px;
+}
+
+#section1{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 15px;
+    color: white;
+}
+
+#socials{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+
+}
+
+.linksSection{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+    font-weight: 500;
+}
+
+.linksSection a{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+.linksSection p{
+    margin-bottom: 20px;
+}
+
+#paymentSection{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+    font-weight: 500;
+}
+
+#footer footer{
+    font-weight: 400;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    border-top: solid 1px white;
+    
+}
+
+#footer{
+    margin-top: 45px;
+}
+

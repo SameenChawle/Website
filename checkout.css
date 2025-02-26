@@ -1,0 +1,117 @@
+#checkOutForm{
+    display: flex;
+    width: 90%;
+    
+}
+
+#address {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.sectionSelected {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.group {
+  display: flex;
+  gap: 20px;
+}
+
+.group input {
+  padding: 10px 15px;
+  border: solid 1px #b3bb6f;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+
+#address button
+{
+  background-color: #3d6200;
+  border-style: none;
+  padding: 12px 24px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#address button:hover
+{
+  background-color: hsl(83, 100%, 19%, 90%);
+}
+
+
+#checkout{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;   
+    border: solid 1px #b3bb6f;
+    padding: 30px 24px;
+    border-radius: 4px;
+    height: fit-content;
+}
+
+#editCart{
+    text-decoration: none;
+    color: #3d6200;
+    font-weight: 500;
+    border: solid 1px #3d6200;
+    width: fit-content;
+    padding: 0.7rem 1.2rem;
+    border-radius: 5px;
+}
+
+#editCart:hover{
+    background-color: hsl(67, 60%, 75%, 80%);
+}
+
+.totalSum{
+    padding: 20px 0;
+    border-top: solid 1px #b3bb6f;
+}
+
+#checkOutButton{
+    background-color: #3d6200;
+    border-style: none;
+    padding: 12px 0;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#checkOutButton:hover{
+    background-color: hsl(83, 100%, 19%, 95%);
+
+}
+
+.subTitle2 {
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.summary, .totalSum{
+    display: flex;
+    font-weight: 500;
+}
+
+.label{
+    width: 50%;
+}
+
+
+@media screen and (max-width: 768px) {
+  
+    .group {
+      display: flex;
+      flex-direction: column;
+    }
+  
+ 
+}

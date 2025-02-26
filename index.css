@@ -1,0 +1,576 @@
+#banner {
+  display: flex;
+  background-color: #dde69b;
+  padding: 20px 0;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+#bannerText {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 40%;
+}
+
+#t1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+#t2 {
+  font-weight: 400;
+  color: #474b57;
+}
+
+#bannerText a {
+  margin-top: 25px;
+  padding: 12px 24px;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3d6200;
+  border-style: none;
+  color: white;
+  gap: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#bannerText a:hover {
+  background-color: hsl(83, 100%, 19%, 90%);
+}
+
+#bannerPicture {
+  width: 25%;
+}
+
+#features {
+  display: flex;
+  gap: 5%;
+  padding-top: 40px;
+  justify-content: center;
+}
+
+.feature {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 300px;
+}
+
+.featureIcon {
+  background-color: #dde69b;
+  padding: 5px 5px;
+  border-radius: 100%;
+  width: 2.5em;
+  margin-bottom: 5px;
+}
+
+.featureTitle {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.featureText {
+  color: #3d6200;
+  line-height: 175%;
+}
+
+#bestSeller,
+#productList {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 30px;
+}
+
+#shopNow {
+  display: flex;
+  flex-direction: column;
+}
+
+#bestSelling {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0e1422;
+}
+
+#shopNow {
+  color: #474b57;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
+#bestSellerTitle {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#bestSellingProducts,
+#featuredProducts,
+#latestProducts {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+}
+
+#latestProducts {
+  display: none;
+}
+
+.toggle {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+#featured {
+  color: #0e1422;
+  border: solid 2px #b3bb6f;
+  padding: 3px 12px;
+  font-weight: 500;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+#latest {
+  color: #3d6200;
+  cursor: pointer;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.productIMG {
+  width: 230px;
+  height: 230px;
+  object-fit: contain;
+}
+
+.productImage {
+  background-color: #dde69b;
+  border-radius: 4px;
+  border: solid 1px #3d6200;
+  position: relative;
+  transition: background-color 0.3s ease;
+  padding: 30px 0;
+}
+
+.likeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.addToCart {
+  position: absolute;
+  bottom: 0px;
+  background-color: #3d6200;
+  height: 17%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  color: #dde69b;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product:hover {
+  .likeButton {
+    opacity: 1;
+  }
+
+  .addToCart {
+    opacity: 1;
+  }
+
+  .productImage {
+    background-color: #b3ba6d;
+  }
+}
+
+.likeButton.liked {
+    opacity: 1;
+
+}
+
+.productImage.liked {
+    background-color: #b3ba6d;
+  }
+
+.productDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.productName {
+  font-weight: 500;
+}
+
+.stockNprice {
+  display: flex;
+  color: #3d6200;
+  font-weight: 500;
+  align-items: center;
+  gap: 5%;
+}
+
+.stock {
+  font-size: 13px;
+  border: solid 2px #3d6200;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+#banner2 {
+  background-image: linear-gradient(to right, #dde69b, white);
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+  margin: 40px 0;
+}
+
+#banner2Text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+#banner2SubText {
+  color: #3d6200;
+}
+
+#banner2title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #0e1422;
+}
+
+#banner2Text button {
+  display: flex;
+  background-color: #3d6200;
+  color: white;
+  width: fit-content;
+  gap: 10px;
+  padding: 12px 24px;
+  border-style: none;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#banner2Text button img {
+  width: 14px;
+}
+
+#banner2Text button:hover {
+  background-color: hsl(83, 100%, 19%, 90%);
+}
+#banner2 img {
+  width: 30%;
+}
+
+#newsletter {
+  display: flex;
+  background-image: linear-gradient(to left, #dde69b, white);
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  gap: 10rem;
+  margin: 3% 0;
+}
+
+#newsletterText {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+#newsletterH1 {
+  font-weight: 700;
+  color: #3d6200;
+  font-size: 1.5rem;
+}
+
+#newsletterH2 {
+  color: #3d6200;
+}
+
+#inputBox {
+  display: flex;
+  gap: 10px;
+}
+
+#inputBox input {
+  padding: 10px 15px;
+  border: solid 1px #3d6200;
+  background-color: hsl(222, 42%, 9%, 0%);
+  border-radius: 6px;
+}
+
+#inputBox button {
+  background-color: #3d6200;
+  color: white;
+  border-style: none;
+  padding: 3% 7%;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#inputBox button:hover {
+  background-color: hsl(83, 100%, 19%, 90%);
+}
+
+@media screen and (max-width: 1200px) {
+  .feature {
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #t1 {
+    font-size: 25px;
+  }
+  #t2 {
+    font-size: 17px;
+  }
+
+  #bannerPicture {
+    width: 40%;
+  }
+
+  #banner {
+    gap: 5%;
+  }
+
+  .feature{
+        max-width: 220px;
+    }
+
+    .productIMG {
+        width: 180px;
+        height: 180px;
+        object-fit: contain;
+    }
+
+    .productName{
+        font-size: 13px;
+    }
+
+    #newsletterH1{
+        font-size: 1.3rem;
+    
+    }
+
+    #newsletter{
+        gap: 5rem;
+    }
+
+    #newsletterText{
+        width: 40%;
+    }
+
+    #banner2title{
+        font-size: 1.5rem;
+    }
+
+    #banner2{
+        padding: 5% 5%;
+    }
+
+    #banner2Text{
+        width: 55% ;
+    }
+
+
+}
+
+
+@media screen and (max-width: 800px) {
+    .productIMG {
+        width: 160px;
+        height: 160px;
+        object-fit: contain;
+      }
+
+      .stockNprice {
+        width: 90%;
+      }
+      
+      .stock {
+        font-size: 11px;
+      }
+
+      .productPrice{
+        font-size: 11px;
+      }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    #t1 {
+        font-size: 22px;
+    }
+    #t2 {
+        font-size: 15px;
+    }
+
+    #bannerPicture {
+        width: 40%;
+    }
+
+    #banner {
+        gap: 5%;
+    }
+
+    .feature{
+        max-width: 150px;
+    }
+
+   
+
+
+    .productName{
+    font-size: 12px;
+    }
+
+    .stockNprice {
+    width: 90%;
+    }
+    
+    .stock {
+    font-size: 9px;
+    font-weight: 600;
+    padding: 5px 5px;
+    }
+
+    .productPrice{
+    font-size: 9px;
+    font-weight: 600;
+    }
+
+    #inputBox input{
+        width: 50%;
+        font-size: 12px;
+    }
+    #inputBox button{
+        width: 30%;
+        padding: 1% 3%;
+        font-size: 12px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 576px) {
+  #t1 {
+    font-size: 20px;
+  }
+  #t2 {
+    font-size: 15px;
+  }
+
+  #bannerPicture {
+    width: 40%;
+  }
+
+  #banner {
+    gap: 5%;
+  }
+
+    .feature{
+        max-width: 150px;
+    }
+
+    .featureIcon{ 
+        width: 2em;
+        margin-bottom: 5px;
+    }
+
+    .featureTitle{
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .featureText{
+        font-size: 12px;
+        color: #3d6200;
+        line-height: 175%;
+    } 
+
+    .productIMG {
+        width: 100px;
+        height: 80px;
+        object-fit: contain;
+    }
+
+    .productName{
+        font-size: 12px;
+    }
+    
+    .stockNprice {
+        width: 90%;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .stock{
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+
+    .productPrice{
+        font-size: 10px;
+    }
+
+    .likeButton{
+        width: 20%;
+    }
+
+    .addToCart{
+        font-size: 11px;
+    }
+
+    .addToCart img{
+        width: 15%;
+    }
+        
+
+    #inputBox{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    
+    #inputBox button{
+        width: 70%;
+        padding: 3% 2%;
+    }
+
+
+}

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QuickMart</title>
+        <link rel="stylesheet" href="common.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" type="image/svg+xml" href="icons/quickmartWebIcon.svg">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+
+    </head>
+    <body>
+
+        <div class="header">
+            <p>Get 25% OFF on your first order. 
+            <a href="products.html">Order Now</a></p>
+        </div>
+
+        <div class="navbar">
+            <img id="QMLogo" src="icons/quickmartLogo1.svg" onclick="goToHome()">
+
+            <div class="navMenu">
+                <img id="navIcon" src="icons/dropdownMenu.svg" alt="menu" style="cursor: pointer;">
+            
+
+                <div class="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="products.html"> Products </a>
+                    <a href="aboutus.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+
+            <div class="navLinks2">
+                <div id="searchbar"><input placeholder="Search products"><img src="icons/searchIcon.svg"></div>
+
+                <a href="cart.html"><img src="icons/cart.svg"></a>
+                <div class="userLogin">
+                
+                    <a href="myAccount.html"><img src="icons/User.svg"></a>
+
+                    
+                    <div class="loginSignup">
+                        <a href="login.html">Login</a>
+                        <a href="signup.html">Sign Up</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div id="banner">
+            <div id="bannerText">
+                <p id="t1"> Fresh Arrivals Online </p>
+                <p id="t2">Discover Our Freshest Produce Today</p>
+
+                <a href="products.html">View Collection <img src = "icons/arrowRight.svg"> </a>
+            </div>
+
+            <img id="bannerPicture" src="icons/bannerPicture.svg">
+        </div>
+
+        <div id="features">
+            <div class="feature">
+                <img class="featureIcon" src="icons/truck.svg" alt="Free Shipping icon">
+                <p class="featureTitle">Free Shipping</p>
+                <p class="featureText">Discover fresh farm goods today and enjoy free shipping on every order! Don't miss out on this special offer.</p>
+            </div>
+
+            <div class="feature">
+                <img class="featureIcon" src="icons/satisfaction.svg" alt="Satisfaction Guarantee icon">
+                <p class="featureTitle">Satisfaction Guarantee</p>
+                <p class="featureText">Shop confidently with our Satisfaction Guarantee: Love it or get a refund.</p>
+            </div>
+
+            <div class="feature">
+                <img class="featureIcon" src="icons/secure.svg" alt="Secure payment icon">
+                <p class="featureTitle">Secure Payment</p>
+                <p class="featureText">Your security is our priority. Your payments are secure with us.</p>
+            </div>
+
+        </div>
+
+        <div id="bestSeller">
+            <div id="bestSellerTitle">
+                <p id="shopNow">SHOP NOW</p>
+                <p id="bestSelling">Best Selling</p>
+            </div>
+
+            <div id="bestSellingProducts">
+
+                <div class="product" onclick="showProduct('product9')">
+
+                    <div class="productImage">
+
+                        <img class="likeButton" src="icons/heart.svg" onclick="likeProduct(this); event.stopPropagation();">
+
+                        <img class="productIMG" src="products/freshIndianMalta1kg2.svg" alt="Picture of an indian malta">
+
+                        <div class="addToCart">
+                            Add to cart <img src="icons/CartAdd.svg">
+                        </div>
+
+                    </div>
+
+                    <div class="productDetails">
+                        <p class="productName">
+                            Fresh Indian Malta 1kg
+                        </p>
+                        <div class="stockNprice">
+                            <p class="stock">IN STOCK</p>
+                            <p class="productPrice">
+                                AED 7.00
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="product" onclick="showProduct('product8')">
+
+                    <div class="productImage">
+
+                        <img class="likeButton" src="icons/heart.svg" onclick="likeProduct(this); event.stopPropagation();">
+
+                        <img class="productIMG" src="products/freshCauliflower1kg.svg" alt="cauliflower">
+
+                        <div class="addToCart">
+                            Add to cart <img src="icons/CartAdd.svg">
+                        </div>
+                    </div>
+
+                    <div class="productDetails">
+                        <p class="productName">
+                            Fresh Cauliflower 1kg
+                        </p>
+                        <div class="stockNprice">
+                            <p class="stock">IN STOCK</p>
+                            <p class="productPrice">
+                                AED 6.95
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="product" onclick="showProduct('product7')">
+
+                    <div class="productImage">
+
+                        <img class="likeButton" src="icons/heart.svg" onclick="likeProduct(this); event.stopPropagation();">
+
+                        <img class="productIMG" src="products/eggplantBig1kg.svg" alt="Eggplant">
+
+                        <div class="addToCart">
+                            Add to cart <img src="icons/CartAdd.svg">
+                        </div>
+
+                    </div>
+
+                    <div class="productDetails">
+                        <p class="productName">
+                            Eggplant Big 1kg
+                        </p>
+                        <div class="stockNprice">
+                            <p class="stock">IN STOCK</p>
+                            <p class="productPrice">
+                                AED 5.25
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="product" onclick="showProduct('product25')">
+
+                    <div class="productImage">
+
+                        <img class="likeButton" src="icons/heart.svg" onclick="likeProduct(this); event.stopPropagation();">
+
+                        <img class="productIMG" src="products/surjapurMango.svg" alt="Surjapur mango">
+
+                        <div class="addToCart">
+                            Add to cart <img src="icons/CartAdd.svg">
+                        </div>
+
+                    </div>
+
+                    <div class="productDetails">
+                        <p class="productName">
+                            Surjapur Mango
+                        </p>
+                        <div class="stockNprice">
+                            <p class="stock">IN STOCK</p>
+                            <p class="productPrice">
+                                AED 12.45
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div id="banner2">
+            <div id="banner2Text">
+                <p id="banner2title">
+                    Explore Our Poultry Paradise!
+                </p>
+                <p id="banner2SubText">Step into a world of quality and explore our diverse collection of poultry products.</p>
+
+                <button onclick="window.location.href='products.html'">Start Browsing <img src="icons/arrowRight.svg"> </button>
+            </div>
+            <img src="icons/steak.svg">
+        </div>
+        
+        <div id="productList">
+            <div class="toggle">
+                <p id="featured">Featured</p>
+                <p id="latest">Latest</p>
+            </div>
+
+            <div id="featuredProducts">
+
+                <div class="product" onclick="showProduct('product22')">
+
+                    <div class="productImage">
+
+                        <img class="likeButton" src="icons/heart.svg" onclick="likeProduct(this); event.stopPropagation();">
+
+                        <img class="productIMG" src="products/scottishSalmonFish175g.svg" alt="scottish salmon fish">
+
+                        <div class="addToCart">
+                            Add to cart <img src="icons/CartAdd.svg">
+                        </div>
+
+                    </div>
+
+                    <div class="productDetails">
+                        <p class="productName">
+                            Scottish Salmon Fish 175g
+                        </p>
+                        <div class="stockNprice">
+                            <p class="stock">IN STOCK</p>
+                            <p class="productPrice">
+                                AED 20.00
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="product" onclick="showProduct('product10')">
+
+                    <div class="productImage">
+
+                        <img class="likeButton" src="icons/heart.svg" onclick="likeProduct(this); event.stopPropagation();">
+
+                        <img class="productIMG" src="products/freshMilk2L.svg" alt="fresh milk">
+
+                        <div class="addToCart">
+                            Add to cart <img src="icons/CartAdd.svg">
+                        </div>
+
+                    </div>
+
+                    <div class="productDetails">
+                        <p class="productName">
+                            Fresh Milk 2L
+                        </p>
+                        <div class="stockNprice">
+                            <p class="stock">IN STOCK</p>
+                            <p class="productPrice">
+                                AED 10.00
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="product" onclick="showProduct('product18')">
+
+                    <div class="productImage">
+
+                        <img class="likeButton" src="icons/heart.svg" onclick="likeProduct(this); event.stopPropagation();">
+
+                        <img class="productIMG"  src="products/indianMuttonBoneless500g.svg" alt=" boneless mutton">
+
+                        <div class="addToCart">
+                            Add to cart <img src="icons/CartAdd.svg">
+                        </div>
+
+                    </div>
+
+                    <div class="productDetails">
+                        <p class="productName">
+                            Indian Mutton Boneless 500g
+                        </p>
+                        <div class="stockNprice">
+                            <p class="stock">IN STOCK</p>
+                            <p class="productPrice">
+                                AED 22.00
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="product" onclick="showProduct('product21')">
+
+                    <div class="productImage">
+
+                        <img class="likeButton" src="icons/heart.svg" onclick="likeProduct(this); event.stopPropagation();">
+
+                        <img class="productIMG" src="products/saltedButter500g.svg" alt="butter">
+
+                        <div class="addToCart">
+                            Add to cart <img src="icons/CartAdd.svg">
+                        </div>
+
+                    </div>
+
+                    <div class="productDetails">
+                        <p class="productName">
+                            Salted Butter 500g
+                        </p>
+                        <div class="stockNprice">
+                            <p class="stock">IN STOCK</p>
+                            <p class="productPrice">
+                                AED 15.00
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="latestProducts">
+
+                <div class="product" onclick="showProduct('product4')">
+
+                    <div class="productImage">
+
+                        <img class="likeButton" src="icons/heart.svg" onclick="likeProduct(this); event.stopPropagation();">
+
+                        <img class="productIMG" src="products/carrots500g.svg" alt="carrots">
+
+                        <div class="addToCart">
+                            Add to cart <img src="icons/CartAdd.svg">
+                        </div>
+
+                    </div>
+
+                    <div class="productDetails">
+                        <p class="productName">
+                            Carrots 500g
+                        </p>
+                        <div class="stockNprice">
+                            <p class="stock">IN STOCK</p>
+                            <p class="productPrice">
+                                AED 1.45
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="product" onclick="showProduct('product11')">
+
+                    <div class="productImage">
+
+                        <img class="likeButton" src="icons/heart.svg" onclick="likeProduct(this); event.stopPropagation();">
+
+                        <img class="productIMG" src="products/freshPrawnsFarmedMedium350g.svg" alt="prawns">
+
+                        <div class="addToCart">
+                            Add to cart <img src="icons/CartAdd.svg">
+                        </div>
+
+                    </div>
+
+                    <div class="productDetails">
+                        <p class="productName">
+                            Fresh Prawns Medium 350g
+                        </p>
+                        <div class="stockNprice">
+                            <p class="stock">IN STOCK</p>
+                            <p class="productPrice">
+                                AED 9.10
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="product" onclick="showProduct('product20')">
+
+                    <div class="productImage">
+
+                        <img class="likeButton" src="icons/heart.svg" onclick="likeProduct(this); event.stopPropagation();">
+
+                        <img class="productIMG"  src="products/pomegranateEgypt1kg.svg" alt="pomegranate">
+
+                        <div class="addToCart">
+                            Add to cart <img src="icons/CartAdd.svg">
+                        </div>
+
+                    </div>
+
+                    <div class="productDetails">
+                        <p class="productName">
+                            Pomegranate Egypt 1kg
+                        </p>
+                        <div class="stockNprice">
+                            <p class="stock">IN STOCK</p>
+                            <p class="productPrice">
+                                AED 3.45
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="product" onclick="showProduct('product17')">
+
+                    <div class="productImage">
+
+                        <img class="likeButton" src="icons/heart.svg" onclick="likeProduct(this); event.stopPropagation();">
+
+                        <img class="productIMG" src="products/HPMDVeganAppleDanishPuff4pcs.svg" alt="Apple danish puff 4pcs">
+
+                        <div class="addToCart">
+                            Add to cart <img src="icons/CartAdd.svg">
+                        </div>
+
+                    </div>
+
+                    <div class="productDetails">
+                        <p class="productName">
+                            HPMD Vegan Danish Puff 4pcs
+                        </p>
+                        <div class="stockNprice">
+                            <p class="stock">IN STOCK</p>
+                            <p class="productPrice">
+                                AED 11.85
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="newsletter">
+            <div id="newsletterText">
+                <p id="newsletterH1">Join Our Newsletter</p>
+                <p id="newsletterH2">We love to surprise our subscribers with occasional gifts.</p>
+            </div>
+
+            <div id="inputBox">
+                <input placeholder="Your email address">
+                <button>Subscribe</button>
+            </div>
+        </div>        
+        
+        <div id="footer" style="background-color: #3d6200">
+            <div id="sections">
+                <div id="section1">
+                    
+                    <img src="icons/quickmartLogo.svg" style="height: 25px; align-self: flex-start;" />
+                    
+                    <p>
+                        At QuickMart, we are committed to delivering quality groceries right to your door, making your shopping experience convenient and hassle-free.
+                    </p>
+                    <div id="socials">
+                        <a href="https://www.instagram.com/">
+                            <img src="icons/instagram.svg" />
+                        </a>
+
+                        <a href="https://www.youtube.com/">
+                            <img src="icons/youtube.svg" />
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="linksSection">
+                    <p>SUPPORT</p>
+                    
+                    <a href="termsOfUse.html">Terms of use</a>
+                    <a href="privacyPolicy.html">Privacy Policy</a>
+                </div>
+        
+                <div class="linksSection">
+                <p>COMPANY</p>
+                
+                <a href="aboutus.html">About us</a>
+                <a href="contact.html">Contact</a>
+                
+                </div>
+        
+                <div class="linksSection">
+                    <p>SHOP</p>
+                
+                    <a href="myAccount.html">My Account</a>
+                    <a href="cart.html">Cart</a>
+                
+                </div>
+        
+                <div id="paymentSection">
+                    <p>ACCEPTED PAYMENTS</p>
+                    <img src="icons/payments.svg" />
+                </div>
+
+            </div>
+    
+            <footer>
+                © 2024 QuickMart. All rights reserved.
+            <footer>
+
+        </div>
+
+        <script src="index.js"></script>
+        <script src="common.js"></script>
+    </body>
+</html>
